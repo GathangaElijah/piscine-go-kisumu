@@ -1,2 +1,2 @@
 #!/bin/bash
-find .  -type f  -name '*.sh' | sed 's/\.sh$//' | cut -c 3- | sort -r
+find .  -type f  -name '*.sh' -exec basename {} \; | cut -d '.' -f1 | sort -r

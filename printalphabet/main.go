@@ -7,4 +7,5 @@ func main() {
 	for i := x; i <= 122; i++ {
 		z01.PrintRune(i)
 	}
+	z01.PrintRune(10)
 }

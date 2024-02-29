@@ -1,17 +1,20 @@
 package main
 
 import (
-	"fmt"
+	"github.com/01-edu/z01"
 )
 
 func IsNegative(nb int) {
 	if nb < 0 {
-		fmt.Println("T")
+		z01.PrintRune('T')
 	} else {
-		fmt.Println("F")
+		z01.PrintRune('F')
 	}
+	z01.PrintRune(10)
 }
 
 func main() {
-	IsNegative()
+	IsNegative(1)
+	IsNegative(0)
+	IsNegative(-1)
 }

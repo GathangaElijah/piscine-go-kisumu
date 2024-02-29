@@ -5,6 +5,9 @@ func UltimateDivMod(a *int, b *int) {
 		panic("Cannot execute ")
 	}
 
-	*a = *a / *b
-	*b = *a % *b
+	div := *a / *b
+	mod := *a % *b
+
+	*a = div
+	*b = mod
 }

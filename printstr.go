@@ -1,10 +1,10 @@
 package piscine
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func PrintStr(s string) {
 	aString := []string{s}
 	for _, chr := range aString {
-		fmt.Println(chr)
+		z01.PrintRune(chr)
 	}
 }

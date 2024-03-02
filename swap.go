@@ -9,5 +9,4 @@ func Swap(a *int, b *int) {
 
 	value1 = value2
 	value2 = value1
-
 }

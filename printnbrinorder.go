@@ -10,6 +10,10 @@ func PrintNbrInOrder(n int) {
 		return
 	}
 	no_of_digits := make([]int, 0, 10)
+	for n > 0 {
+		no_of_digits = append(no_of_digits, n%10)
+		n /= 10
+	}
 	for i := range no_of_digits {
 		for j := range no_of_digits {
 			if no_of_digits[i] < no_of_digits[j] {

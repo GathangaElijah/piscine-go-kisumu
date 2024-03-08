@@ -16,7 +16,6 @@ func Capitalize(s string) string {
 	}
 	return string(output)
 }
-
 func isLetterOrDigit(value rune) bool {
 	return (value >= 'a' && value <= 'z') || (value >= 'A' && value <= 'Z') || (value >= '0' && value <= '9')
 }

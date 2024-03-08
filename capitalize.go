@@ -16,18 +16,22 @@ func Capitalize(s string) string {
 	}
 	return string(output)
 }
+
 func isLetterOrDigit(value rune) bool {
 	return (value >= 'a' && value <= 'z') || (value >= 'A' && value <= 'Z') || (value >= '0' && value <= '9')
 }
+
 func isLetter(value rune) bool {
 	return (value >= 'a' && value <= 'z') || (value >= 'A' && value <= 'Z')
 }
+
 func toUpperCase(value rune) rune {
 	if value >= 'a' && value <= 'z' {
 		return value - 32
 	}
 	return value
 }
+
 func toLowerCase(value rune) rune {
 	if value >= 'A' && value <= 'Z' {
 		return value + 32

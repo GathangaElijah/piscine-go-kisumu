@@ -51,7 +51,7 @@ func Atoi(s string) (int, bool) {
 	}
 
 	if negative {
-		result = result
+		result = -result
 	}
 	return result, true
 }

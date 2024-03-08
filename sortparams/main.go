@@ -16,7 +16,7 @@ func main() {
 			}
 		}
 	}
-	
+
 	for _, chars := range params {
 		for _, value := range chars {
 			z01.PrintRune(value)

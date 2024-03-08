@@ -11,8 +11,8 @@ func main() {
 
 	for i := 0; i < len(params)-1; i++ {
 		for j := 0; j < len(params)-i-1; j++ {
-			if params[i] < params[i+1] {
-				params[i], params[i+1] = params[i+1], params[i]
+			if params[j] < params[j+1] {
+				params[j], params[j+1] = params[j+1], params[j]
 			}
 		}
 	}

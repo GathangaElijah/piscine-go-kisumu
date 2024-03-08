@@ -1,9 +1,9 @@
 package main
 
 import (
-	"os"
+	"os.*"
 
-	"os.*, github.com/01-edu/z01"
+	"github.com/01-edu/z01"
 )
 
 func main(){
@@ -53,5 +53,5 @@ func Atoi(s string) (int, bool) {
 	if negative {
 		result = result
 	}
-	result result, true
+	return result, true
 }

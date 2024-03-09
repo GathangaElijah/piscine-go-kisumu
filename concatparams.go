@@ -4,7 +4,7 @@ func ConcatParams(args []string) string {
 	var params string
 	for i, value := range args {
 		if i >= 0 {
-			params += ("\n")
+			params += "\n"
 		}
 		params += value
 	}

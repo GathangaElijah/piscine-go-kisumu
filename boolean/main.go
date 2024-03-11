@@ -7,6 +7,7 @@ import (
 )
 
 const EvenMsg = "I have an even number of arguments"
+
 const OddMsg = "I have an odd number of arguments"
 
 func even(nbr int) bool {

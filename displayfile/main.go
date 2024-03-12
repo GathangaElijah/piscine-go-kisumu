@@ -9,22 +9,22 @@ import (
 func main() {
 	args := len(os.Args[1:])
 	if args == 0 {
-		fmt.Printf("File name missing")
+		fmt.Printf("File name missing\n")
 		return
 	}
 	if args > 1 {
-		fmt.Printf("Too much arguments")
+		fmt.Printf("Too much arguments\n")
 		return
 	}
 	filename := os.Args[1]
 	_, err := os.Stat(filename)
 	if os.IsNotExist(err) {
-		fmt.Printf("The filename is missing%v", filename)
+		fmt.Printf("The filename is missing%v\n", filename)
 		return
 	}
 	content, err := ioutil.ReadFile(filename)
 	if err != nil {
-		fmt.Printf("Error reading the file%v", err)
+		fmt.Printf("Error reading the file%v\n", err)
 		return
 	}
 	fmt.Printf(string(content))

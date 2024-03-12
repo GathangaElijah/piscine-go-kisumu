@@ -13,7 +13,7 @@ func main() {
 		return
 	}
 	if args > 1 {
-		fmt.Printf("Too much arguments\n")
+		fmt.Printf("Too many arguments\n")
 		return
 	}
 	filename := os.Args[1]

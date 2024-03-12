@@ -17,6 +17,7 @@ func main() {
 		return
 	}
 	//Finding the file
+
 	filename := os.Args[1]
 	_, err := os.Stat(filename)
 	if os.IsNotExist(err) {
@@ -24,11 +25,13 @@ func main() {
 		return
 	}
 	// Reading the file
+
 	content, err := ioutil.ReadFile(filename)
 	if err != nil {
 		println("Error reading the file", err)
 		return
 	}
 	// Outputting the data
+
 	fmt.Println(string(content))
 }

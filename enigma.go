@@ -5,9 +5,8 @@ func Enigma(a ***int, b *int, c *******int, d ****int) {
 	tempVarB := *b
 	tempVarC := *******c
 	tempVarD := ****d
-
-	 *******c = tempVarA 
-	****d =tempVarC 
-	*b = tempVarD 
-	***a = tempVarB  
+	*******c = tempVarA
+	****d = tempVarC
+	*b = tempVarD
+	***a = tempVarB
 }

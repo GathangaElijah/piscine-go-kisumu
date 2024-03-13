@@ -1,5 +1,7 @@
 package piscine
 
+import "github.com/01-edu/z01"
+
 func rot14(s string) string {
 	var newString string
 	for _, char := range s {

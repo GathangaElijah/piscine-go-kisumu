@@ -5,7 +5,7 @@ func CollatzCountdown(start int) int {
 		return -1
 	}
 
-	var noOfSteps = 0
+	noOfSteps := 0
 	for start != 1 {
 		if start%2 == 0 {
 			start = start / 2

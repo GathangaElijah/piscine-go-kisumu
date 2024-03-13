@@ -1,9 +1,8 @@
 package piscine
 
 func ShoppingListSort(slice []string) []string {
-	lengthOfString := len(slice)
-	for i := 0; i < lengthOfString-1; i++ {
-		for j := 0; i < lengthOfString; j++ {
+	for i := 0; i < len(slice)-1; i++ {
+		for j := 0; i < len(slice); j++ {
 			if len(slice[i]) > len(slice[j]) {
 				slice[i], slice[j] = slice[j], slice[i]
 			}

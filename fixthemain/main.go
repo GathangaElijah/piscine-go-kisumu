@@ -12,7 +12,7 @@ type Door struct {
 }
 
 func OpenDoor(ptrDoor *Door) {
-	PrintStr("Door Closing ...")
+	PrintStr("Door Closing...")
 	ptrDoor.state = OPEN
 }
 

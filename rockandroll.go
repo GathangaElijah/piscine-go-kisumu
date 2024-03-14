@@ -14,6 +14,6 @@ func RockAndRoll(n int) string {
 		message2 := "roll\n"
 		return message2
 	} else {
-		return "error: non divisible\n "
+		return "error: non divisible\n"
 	}
 }
